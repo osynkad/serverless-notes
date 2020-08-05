@@ -13,7 +13,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   stage: prod
-  region: us-east-1
+  region: us-east-2 # this must match whatever region db is on, in this case ohio(us-east-2)
 
   # These environment variables are made available to our functions
   # under process.env.
@@ -31,8 +31,7 @@ provider:
         - dynamodb:GetItem
         - dynamodb:PutItem
         - dynamodb:UpdateItem
-        - dynamodb:DeleteItem
-      Resource: "arn:aws:dynamodb:us-east-1:*:*"
+      Resource: "arn:aws:dynamodb:us-east-2:*:*"
 
 functions:
   # Defines an HTTP API endpoint that calls the main function in create.js
