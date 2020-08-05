@@ -1,0 +1,11 @@
+{
+  "body": "{\"content\":\"latest world\"}",
+  "pathParameters": {
+    "id": "db7ead70-d688-11ea-a5e5-a77a4cb802bf"
+  },
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}
